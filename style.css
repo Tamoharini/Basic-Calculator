@@ -1,0 +1,29 @@
+body {
+background: #eaeaea;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInButtons {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+.calculator {
+background: white;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 0 20px rgba(0,0,0,0.2);
+width: 250px;
+animation: slideIn 0.6s ease;
+}
+
